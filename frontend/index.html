@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhishGuard AI | Advanced Email Intelligence</title>
+    <meta name="description" content="Secure, local AI-powered phishing email detection for professionals.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Premium Dynamic Background -->
+    <div class="mesh-background">
+        <div class="mesh-blob blob-1"></div>
+        <div class="mesh-blob blob-2"></div>
+        <div class="mesh-blob blob-3"></div>
+    </div>
+
+    <div class="app-container">
+        <!-- Sidebar: History & Stats -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fas fa-shield-virus"></i>
+                    <span>PhishGuard</span>
+                </div>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <div class="nav-item active">
+                    <i class="fas fa-magnifying-glass-chart"></i>
+                    <span>Scanner</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-clock-rotate-left"></i>
+                    <span>History</span>
+                </div>
+            </nav>
+
+            <div class="history-section">
+                <h3>Recent Activity</h3>
+                <div id="historyList" class="history-list">
+                    <div class="empty-history">No recent scans</div>
+                </div>
+            </div>
+
+            <div class="sidebar-footer">
+                <div class="status-indicator">
+                    <div class="pulse-dot"></div>
+                    <span>AI Model Active</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Dashboard Content -->
+        <main class="dashboard-main">
+            <header class="top-bar">
+                <div class="search-info">
+                    <h2>Neural Intelligence Dashboard</h2>
+                    <p>Local-first email verification system powered by Scikit-Learn.</p>
+                </div>
+                <div class="user-profile">
+                    <div class="avatar"><i class="fas fa-user-shield"></i></div>
+                </div>
+            </header>
+
+            <div class="dashboard-grid">
+                <!-- Input Area -->
+                <section class="glass-panel input-panel">
+                    <div class="panel-header">
+                        <i class="fas fa-paper-plane"></i>
+                        <h3>Verification Input</h3>
+                    </div>
+                    <textarea id="emailInput" placeholder="Paste the full email content here for neural pattern recognition..."></textarea>
+                    <button id="analyzeBtn" class="premium-btn">
+                        <span class="btn-text">Initiate Deep Scan</span>
+                        <i class="fas fa-microchip"></i>
+                        <div id="loader" class="loader"></div>
+                    </button>
+                    <div class="input-footer">
+                        <span><i class="fas fa-lock"></i> 100% Privacy Guaranteed</span>
+                        <span><i class="fas fa-bolt"></i> Real-time Inference</span>
+                    </div>
+                </section>
+
+                <!-- Results & Intelligence -->
+                <section id="resultSection" class="glass-panel result-panel hidden">
+                    <div class="panel-header">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Analysis Insights</h3>
+                    </div>
+
+                    <div class="result-summary">
+                        <div id="resultIcon" class="result-icon-large">
+                            <i id="iconType" class="fas fa-robot"></i>
+                        </div>
+                        <div class="summary-text">
+                            <h2 id="resultTitle">Analyzing...</h2>
+                            <p id="resultDesc">Our neural network is identifying malicious patterns and linguistic anomalies.</p>
+                        </div>
+                    </div>
+
+                    <div class="intelligence-grid">
+                        <div class="intel-card">
+                            <span class="label">Safety Probability</span>
+                            <div class="score-container">
+                                <div class="score-circle">
+                                    <svg viewBox="0 0 36 36" class="circular-chart">
+                                        <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                        <path id="scorePath" class="circle" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                        <text x="18" y="20.35" id="scoreText" class="percentage">0%</text>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="intel-card">
+                            <span class="label">Threat Diagnostics</span>
+                            <ul id="threatList" class="threat-list">
+                                <li><i class="fas fa-check-circle"></i> Vector Space Embedding</li>
+                                <li><i class="fas fa-check-circle"></i> Bayesian Inference</li>
+                                <li><i class="fas fa-check-circle"></i> Contextual Scoring</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
