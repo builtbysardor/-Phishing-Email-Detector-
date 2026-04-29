@@ -2,7 +2,7 @@
 
 > 🛡️ **Advanced, local AI-powered phishing email detection system with a stunning Glassmorphism interface.**
 
-![PhishGuard AI Demo](assets/phishguard_premium_v3.webp)
+![PhishGuard AI Premium Mockup](assets/phishguard_hero.png)
 
 ## 🎥 Visual Highlights
 
